@@ -15,6 +15,9 @@ def hello_world():
     elif param_hotel == 'resort':
         param_hotel = 'Resort Hotel'
 
+    param_month = int(param_month)
+    param_num = int(param_num)
+
     import pickle
     import numpy as np
 
