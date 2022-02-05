@@ -10,6 +10,10 @@ def hello_world():
     param_hotel = request.form.get("hotel_type")
     param_month = request.form.get("arrival_month")
     param_num = request.form.get("number_of_people")
+    if param_hotel == 'city':
+        param_hotel = 'City Hotel'
+    elif param_hotel == 'resort':
+        param_hotel = 'Resort Hotel'
 
     import pickle
     import numpy as np
